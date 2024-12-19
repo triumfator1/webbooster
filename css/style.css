@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "FuturaFuturisC";
   src: url("../fonts/FuturaFuturisC-Bold.eot");
@@ -422,8 +423,8 @@ body {
 
 body {
   font-family: "FuturaBookC", sans-serif;
-  color: #333333;
-  background: #F2F2F4;
+  color: #111;
+  background: #f2f2f4;
 }
 
 img {
@@ -473,11 +474,11 @@ h2 {
 }
 
 .button {
-  border: 1px solid #FFA500;
+  border: 1px solid #ffa500;
   display: block;
   cursor: pointer;
   padding: 1.0555555556rem 3.7777777778rem;
-  background: #FFA500;
+  background: #ffa500;
   border-radius: 10px;
   color: #fff;
   text-transform: uppercase;
@@ -521,16 +522,10 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.contact {
-  gap: 5px;
+  gap: 15px;
 }
 
 .menu {
@@ -547,13 +542,11 @@ h2 {
 
 .banner {
   padding: 182px 0;
-  background: center 0/cover no-repeat url("../img/bg-lines.png"), center 0/cover no-repeat url("../img/bg-1.png");
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-lines.png"), url("../img/bg-1.png");
   color: #fff;
-}
-
-.why {
-  padding: 88px 0;
-  color: #111111;
 }
 
 .banner-info {
@@ -572,8 +565,8 @@ h2 {
 }
 
 .backdrop {
-  background: -webkit-gradient(linear, left top, right top, color-stop(1.34%, #969AF7), color-stop(96.66%, rgba(150, 154, 247, 0)));
-  background: linear-gradient(90deg, #969AF7 1.34%, rgba(150, 154, 247, 0) 96.66%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.34%, #969af7), color-stop(96.66%, rgba(150, 154, 247, 0)));
+  background: linear-gradient(90deg, #969af7 1.34%, rgba(150, 154, 247, 0) 96.66%);
   border-radius: 10px;
   opacity: 0.3;
   position: absolute;
@@ -584,7 +577,8 @@ h2 {
 }
 
 .list-element::before {
-  content: url("../img/check.svg");
+  content: "✓";
+  color: #48ffff;
   margin-right: 10px;
 }
 
@@ -623,7 +617,7 @@ label {
 
 .form-input {
   width: 100%;
-  background-color: #F5F3FF;
+  background-color: #f5f3ff;
   border-radius: 10px;
   border: none;
   -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1019607843) inset;
@@ -658,12 +652,17 @@ label {
   margin-bottom: 10px;
 }
 
-.menu-element, .banner-info {
+.menu-element,
+.banner-info {
   opacity: 0.3;
 }
 
 .bg-dark {
-  background-color: #1C0A90;
+  background-color: #1c0a90;
+}
+
+.why {
+  padding: 88px 0;
 }
 
 .why-title {
@@ -676,20 +675,11 @@ label {
   margin-bottom: 42px;
 }
 
-.why-bg {
-  position: absolute;
-  width: 100%;
-  background: center 0/cover no-repeat url("../img/bg-2.png");
-  top: 368px;
-  height: 1752px;
-  z-index: -1;
-}
-
 .cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   grid-template-rows: repeat(2, minmax(0, 1fr));
-  gap: 43px 32px;
+  gap: 2.3888888889rem 1.7777777778rem;
 }
 
 .card-img {
@@ -711,7 +701,7 @@ label {
           flex-direction: column;
   padding: 30px;
   text-align: center;
-  color: #2A336C;
+  color: #2a336c;
 }
 
 .card-title {
@@ -725,6 +715,7 @@ label {
   font-family: "FuturaBookC", sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  color: #555;
 }
 
 .brands-slide {
@@ -737,12 +728,15 @@ label {
 
 .brands {
   padding: 175px 20px;
-  background: center 0/cover no-repeat url(../img/bg-lines2.png), center 0/cover no-repeat url(../img/bg-3.png);
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-lines2.png"), url("../img/bg-3.png");
   color: #fff;
 }
 
 .brands-title {
-  margin-bottom: 57px;
+  margin-bottom: 3.1666666667rem;
 }
 
 .brand-img {
@@ -786,10 +780,6 @@ label {
   margin-top: -60px;
 }
 
-.work-title {
-  color: #111111;
-}
-
 .work-cards {
   color: #fff;
   margin-bottom: 48px;
@@ -804,13 +794,13 @@ label {
   padding: 48px 20px 30px 100px;
   position: relative;
   background-size: 100% 100%;
-  background-image: url(../img/work-card-bg.png), linear-gradient(264.78deg, #041080 -2.85%, #0926C0 93.37%);
+  background-image: url("../img/work-card-bg.png"), linear-gradient(264.78deg, #041080 -2.85%, #0926c0 93.37%);
 }
 
 .work-card:nth-child(1) {
   -webkit-clip-path: path("M20 0C8.95431 0 0 8.95429 0 20V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V177.073L438.319 139.323C439.858 137.03 439.858 133.312 438.319 131.018L413 93.2681V20C413 8.9543 404.046 0 393 0H20Z");
           clip-path: path("M20 0C8.95431 0 0 8.95429 0 20V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V177.073L438.319 139.323C439.858 137.03 439.858 133.312 438.319 131.018L413 93.2681V20C413 8.9543 404.046 0 393 0H20Z");
-  width: calc(100% + 30px);
+  width: calc(100% + 32px);
 }
 
 .work-card:nth-child(2) {
@@ -822,7 +812,7 @@ label {
 .work-card:nth-child(3) {
   -webkit-clip-path: path("M20 0C8.95431 0 0 8.95429 0 20V84.9821L28.0166 130.995C29.4527 133.354 29.4527 137.178 28.0166 139.537L0 185.55V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V20C413 8.9543 404.046 0 393 0H20Z M20 0C8.95431 0 0 8.95429 0 20V84.9821L28.0166 130.995C29.4527 133.354 29.4527 137.178 28.0166 139.537L0 185.55V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V20C413 8.9543 404.046 0 393 0H20Z M150.208 244.803C148.217 242.891 148.26 239.835 150.304 237.979L205.538 187.839C207.583 185.982 210.855 186.029 212.846 187.941L266.927 239.883C268.918 241.796 268.875 244.851 266.831 246.707L211.597 296.848C209.552 298.704 206.28 298.658 204.288 296.745L150.208 244.803Z");
           clip-path: path("M20 0C8.95431 0 0 8.95429 0 20V84.9821L28.0166 130.995C29.4527 133.354 29.4527 137.178 28.0166 139.537L0 185.55V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V20C413 8.9543 404.046 0 393 0H20Z M20 0C8.95431 0 0 8.95429 0 20V84.9821L28.0166 130.995C29.4527 133.354 29.4527 137.178 28.0166 139.537L0 185.55V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V20C413 8.9543 404.046 0 393 0H20Z M150.208 244.803C148.217 242.891 148.26 239.835 150.304 237.979L205.538 187.839C207.583 185.982 210.855 186.029 212.846 187.941L266.927 239.883C268.918 241.796 268.875 244.851 266.831 246.707L211.597 296.848C209.552 298.704 206.28 298.658 204.288 296.745L150.208 244.803Z");
-  height: calc(100% + 30px);
+  height: calc(100% + 32px);
 }
 
 .work-card:nth-child(4) {
@@ -833,27 +823,27 @@ label {
 .work-card:nth-child(5) {
   -webkit-clip-path: path("M421.822 0C432.867 0 441.822 8.95429 441.822 20V85.8705L414.634 130.575C413.199 132.934 413.199 136.76 414.634 139.119L441.822 183.823V248.372C441.822 259.418 432.867 268.372 421.822 268.372H47.8216C36.7759 268.372 27.8216 259.418 27.8216 248.372V20C27.8216 8.9543 36.7759 0 47.8216 0H421.822Z M421.822 0C432.867 0 441.822 8.95429 441.822 20V85.8705L414.634 130.575C413.199 132.934 413.199 136.76 414.634 139.119L441.822 183.823V248.372C441.822 259.418 432.867 268.372 421.822 268.372H47.8216C36.7759 268.372 27.8216 259.418 27.8216 248.372V20C27.8216 8.9543 36.7759 0 47.8216 0H421.822Z M50.1983 65.9281C48.6601 63.6347 46.1662 63.6347 44.628 65.9281L1.15363 130.747C-0.384545 133.04 -0.384543 136.758 1.15363 139.051L44.6281 203.87C46.1662 206.163 48.6601 206.163 50.1983 203.87L93.6727 139.051C95.2109 136.758 95.2109 133.04 93.6727 130.747L50.1983 65.9281Z");
           clip-path: path("M421.822 0C432.867 0 441.822 8.95429 441.822 20V85.8705L414.634 130.575C413.199 132.934 413.199 136.76 414.634 139.119L441.822 183.823V248.372C441.822 259.418 432.867 268.372 421.822 268.372H47.8216C36.7759 268.372 27.8216 259.418 27.8216 248.372V20C27.8216 8.9543 36.7759 0 47.8216 0H421.822Z M421.822 0C432.867 0 441.822 8.95429 441.822 20V85.8705L414.634 130.575C413.199 132.934 413.199 136.76 414.634 139.119L441.822 183.823V248.372C441.822 259.418 432.867 268.372 421.822 268.372H47.8216C36.7759 268.372 27.8216 259.418 27.8216 248.372V20C27.8216 8.9543 36.7759 0 47.8216 0H421.822Z M50.1983 65.9281C48.6601 63.6347 46.1662 63.6347 44.628 65.9281L1.15363 130.747C-0.384545 133.04 -0.384543 136.758 1.15363 139.051L44.6281 203.87C46.1662 206.163 48.6601 206.163 50.1983 203.87L93.6727 139.051C95.2109 136.758 95.2109 133.04 93.6727 130.747L50.1983 65.9281Z");
-  width: calc(100% + 30px);
-  margin-left: -30px;
+  width: calc(100% + 32px);
+  margin-left: -32px;
 }
 .work-card:nth-child(5) .card-content {
-  margin-left: 30px;
+  margin-left: 32px;
 }
 .work-card:nth-child(5) .card-title::before {
-  padding-left: 30px;
+  padding-left: 32px;
 }
 
 .work-card:nth-child(6) {
   -webkit-clip-path: path("M209.334 0.62793H46.7454C35.6997 0.62793 26.7454 9.58222 26.7454 20.6279V249C26.7454 260.046 35.6997 269 46.7454 269H419.745C430.791 269 439.745 260.046 439.745 249V20.6279C439.745 9.58223 430.791 0.62793 419.745 0.62793H261.461L240.4 21.4088C238.435 23.3484 235.163 23.4388 233.094 21.6109L209.334 0.62793Z M209.334 0.62793H46.7454C35.6997 0.62793 26.7454 9.58222 26.7454 20.6279V249C26.7454 260.046 35.6997 269 46.7454 269H419.745C430.791 269 439.745 260.046 439.745 249V20.6279C439.745 9.58223 430.791 0.62793 419.745 0.62793H261.461L240.4 21.4088C238.435 23.3484 235.163 23.4388 233.094 21.6109L209.334 0.62793Z M44.6281 66.556C46.1662 64.2626 48.6601 64.2626 50.1983 66.556L93.6727 131.374C95.2109 133.668 95.2109 137.386 93.6727 139.679L50.1983 204.498C48.6601 206.791 46.1662 206.791 44.628 204.498L1.15363 139.679C-0.384545 137.386 -0.384543 133.668 1.15363 131.374L44.6281 66.556Z");
           clip-path: path("M209.334 0.62793H46.7454C35.6997 0.62793 26.7454 9.58222 26.7454 20.6279V249C26.7454 260.046 35.6997 269 46.7454 269H419.745C430.791 269 439.745 260.046 439.745 249V20.6279C439.745 9.58223 430.791 0.62793 419.745 0.62793H261.461L240.4 21.4088C238.435 23.3484 235.163 23.4388 233.094 21.6109L209.334 0.62793Z M209.334 0.62793H46.7454C35.6997 0.62793 26.7454 9.58222 26.7454 20.6279V249C26.7454 260.046 35.6997 269 46.7454 269H419.745C430.791 269 439.745 260.046 439.745 249V20.6279C439.745 9.58223 430.791 0.62793 419.745 0.62793H261.461L240.4 21.4088C238.435 23.3484 235.163 23.4388 233.094 21.6109L209.334 0.62793Z M44.6281 66.556C46.1662 64.2626 48.6601 64.2626 50.1983 66.556L93.6727 131.374C95.2109 133.668 95.2109 137.386 93.6727 139.679L50.1983 204.498C48.6601 206.791 46.1662 206.791 44.628 204.498L1.15363 139.679C-0.384545 137.386 -0.384543 133.668 1.15363 131.374L44.6281 66.556Z");
-  width: calc(100% + 30px);
-  margin-left: -30px;
+  width: calc(100% + 32px);
+  margin-left: -32px;
 }
 .work-card:nth-child(6) .card-content {
-  margin-left: 30px;
+  margin-left: 32px;
 }
 .work-card:nth-child(6) .card-title::before {
-  padding-left: 30px;
+  padding-left: 32px;
 }
 
 .card-title {
@@ -872,7 +862,7 @@ label {
   left: 38px;
   top: 43px;
   font-size: 2rem;
-  color: #969AF7;
+  color: #969af7;
   font-family: "FuturaFuturisC", sans-serif;
 }
 
@@ -890,9 +880,12 @@ label {
 }
 
 .faq {
-  background: center 0/cover no-repeat url(../img/bg-lines3.png), center 0/cover no-repeat url(../img/bg-5.png);
-  padding-top: 131px;
-  padding-bottom: 95px;
+  color: #333333;
+  background-position: center 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/bg-lines3.png), url(../img/bg-5.png);
+  padding: 131px 0 95px;
   margin-top: -60px;
 }
 
@@ -922,10 +915,11 @@ label {
 }
 
 .houdini-heading .houdini-toggle {
+  font-size: 1.3rem;
   padding: 30px 53px;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50.57%, #FFFFFF), to(#BDC0FF));
-  background: linear-gradient(180deg, #FFFFFF 50.57%, #BDC0FF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50.57%, #ffffff), to(#bdc0ff));
+  background: linear-gradient(180deg, #ffffff 50.57%, #bdc0ff 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -939,8 +933,8 @@ label {
 }
 
 .houdini-heading .houdini-toggle[aria-expanded=true] {
-  background: -webkit-gradient(linear, left top, left bottom, from(#969AF7), to(#686EEC));
-  background: linear-gradient(180deg, #969AF7 0%, #686EEC 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#969af7), to(#686eec));
+  background: linear-gradient(180deg, #969af7 0%, #686eec 100%);
   color: #fff;
 }
 
@@ -951,7 +945,7 @@ label {
 }
 
 .houdini-toggle-icon {
-  background: #757AEF;
+  background: #757aef;
   border-radius: 50%;
   padding: 16.5px 13px;
 }
@@ -985,7 +979,7 @@ label {
 }
 
 .footer-button {
-  background: #969AF7;
+  background: #969af7;
   border: 0;
   padding: 20px;
   text-align: center;
@@ -1078,7 +1072,7 @@ label {
           flex-direction: column;
   gap: 20px;
   padding: 75px 20px;
-  background: #1C0A90;
+  background: #1c0a90;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   -webkit-transition: 0.3s;
@@ -1091,7 +1085,8 @@ label {
 }
 
 @media (max-width: 1320px) {
-  .header, .footer-wrap {
+  .header,
+  .footer-wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1149,7 +1144,7 @@ label {
         -ms-flex-align: center;
             align-items: center;
   }
-  .header-navigation.navigation--desctop {
+  .header-navigation.navigation--desktop {
     display: none;
   }
   .navigation--mobile {
