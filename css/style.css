@@ -1,0 +1,1247 @@
+@font-face {
+  font-family: "FuturaFuturisC";
+  src: url("../fonts/FuturaFuturisC-Bold.eot");
+  src: url("../fonts/FuturaFuturisC-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaFuturisC-Bold.woff2") format("woff2"), url("../fonts/FuturaFuturisC-Bold.woff") format("woff"), url("../fonts/FuturaFuturisC-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaDemiC";
+  src: url("../fonts/FuturaDemiC.eot");
+  src: url("../fonts/FuturaDemiC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaDemiC.woff2") format("woff2"), url("../fonts/FuturaDemiC.woff") format("woff"), url("../fonts/FuturaDemiC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaBookC";
+  src: url("../fonts/FuturaBookC.eot");
+  src: url("../fonts/FuturaBookC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaBookC.woff2") format("woff2"), url("../fonts/FuturaBookC.woff") format("woff"), url("../fonts/FuturaBookC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FuturaLightC";
+  src: url("../fonts/FuturaLightC.eot");
+  src: url("../fonts/FuturaLightC.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaLightC.woff2") format("woff2"), url("../fonts/FuturaLightC.woff") format("woff"), url("../fonts/FuturaLightC.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 18px; /*for using REM units*/
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #222;
+}
+
+body {
+  font-family: "FuturaBookC", sans-serif;
+  color: #333333;
+  background: #F2F2F4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+a {
+  display: inline-block;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+h2 {
+  font-family: "FuturaFuturisC", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.3333333333rem;
+}
+
+.banner-title {
+  font-family: "FuturaBookC", sans-serif;
+  font-weight: 700;
+  font-size: 3.8888888889rem;
+  text-transform: uppercase;
+}
+
+.banner-subtitle {
+  font-family: "FuturaDemiC", sans-serif;
+  font-weight: 600;
+  text-transform: lowercase;
+  opacity: 0.5;
+}
+
+.banner-info {
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 1.2777777778rem;
+  font-weight: 400;
+}
+
+.button {
+  border: 1px solid #FFA500;
+  display: block;
+  cursor: pointer;
+  padding: 1.0555555556rem 3.7777777778rem;
+  background: #FFA500;
+  border-radius: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.form .button {
+  margin-top: 35px;
+  width: 100%;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.header {
+  position: fixed;
+  padding: 54px calc((100% - 1280px) / 2);
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap {
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact {
+  gap: 5px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+  gap: 2rem;
+  font-weight: 300;
+}
+
+.banner {
+  padding: 182px 0;
+  background: center 0/cover no-repeat url("../img/bg-lines.png"), center 0/cover no-repeat url("../img/bg-1.png");
+  color: #fff;
+}
+
+.why {
+  padding: 88px 0;
+  color: #111111;
+}
+
+.banner-info {
+  font-size: 1.2777777778rem;
+  margin-bottom: 27px;
+  text-align: left;
+}
+
+.list {
+  position: relative;
+  padding: 30px;
+}
+
+.list-element {
+  margin-bottom: 5px;
+}
+
+.backdrop {
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.34%, #969AF7), color-stop(96.66%, rgba(150, 154, 247, 0)));
+  background: linear-gradient(90deg, #969AF7 1.34%, rgba(150, 154, 247, 0) 96.66%);
+  border-radius: 10px;
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.list-element::before {
+  content: url("../img/check.svg");
+  margin-right: 10px;
+}
+
+.banner-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 60px;
+}
+
+.banner-form {
+  border-radius: 10px;
+}
+
+.form-header {
+  padding: 40px 40px 0;
+  background: #552693;
+  border-radius: 10px 10px 0 0;
+}
+
+.form-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2777777778rem;
+  font-family: "FuturaFuturisC", sans-serif;
+}
+
+label {
+  padding: 0.5555555556rem;
+}
+
+.form-input {
+  width: 100%;
+  background-color: #F5F3FF;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1019607843) inset;
+          box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.1019607843) inset;
+  padding: 20px;
+  font-size: 1rem;
+}
+
+.form-inner {
+  padding: 40px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  color: #626366;
+}
+
+.form-extra {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.extra-text {
+  font-size: 0.7777777778rem;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.menu-element, .banner-info {
+  opacity: 0.3;
+}
+
+.bg-dark {
+  background-color: #1C0A90;
+}
+
+.why-title {
+  margin-bottom: 25px;
+}
+
+.info {
+  font-size: 1.2222222222rem;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.why-bg {
+  position: absolute;
+  width: 100%;
+  background: center 0/cover no-repeat url("../img/bg-2.png");
+  top: 368px;
+  height: 1752px;
+  z-index: -1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  gap: 43px 32px;
+}
+
+.card-img {
+  margin: 0 auto 40px;
+}
+
+.why-card {
+  background: center 0/cover url("../img/why-card-bg.png") #fff;
+  border-radius: 10px;
+  max-width: 369px;
+  -webkit-box-shadow: 0px 4px 30px 0px rgba(9, 38, 192, 0.0509803922);
+          box-shadow: 0px 4px 30px 0px rgba(9, 38, 192, 0.0509803922);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  text-align: center;
+  color: #2A336C;
+}
+
+.card-title {
+  font-family: "FuturaFuturisC", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.8333333333rem;
+}
+
+.card-info {
+  font-family: "FuturaBookC", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.brands-slide {
+  max-width: 242px;
+  height: 174px;
+  border-radius: 10px;
+  background: #fff;
+  position: relative;
+}
+
+.brands {
+  padding: 175px 20px;
+  background: center 0/cover no-repeat url(../img/bg-lines2.png), center 0/cover no-repeat url(../img/bg-3.png);
+  color: #fff;
+}
+
+.brands-title {
+  margin-bottom: 57px;
+}
+
+.brand-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.brands-button-prev,
+.brands-button-next {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.brands-button-prev {
+  left: 0;
+}
+
+.brands-button-next {
+  right: 0;
+}
+
+.brands-slider {
+  margin-bottom: 42px;
+  position: relative;
+  padding-inline: 120px;
+}
+
+.brand-info {
+  font-size: 1rem;
+}
+
+.work {
+  padding: 135px 0 155px;
+  position: relative;
+  background: center 0/cover no-repeat url(../img/bg-4.png);
+  margin-top: -60px;
+}
+
+.work-title {
+  color: #111111;
+}
+
+.work-cards {
+  color: #fff;
+  margin-bottom: 48px;
+  gap: 30px 25px;
+  counter-reset: cards;
+}
+
+.work-card {
+  border-radius: 20px;
+  max-width: 442px;
+  min-height: 268px;
+  padding: 48px 20px 30px 100px;
+  position: relative;
+  background-size: 100% 100%;
+  background-image: url(../img/work-card-bg.png), linear-gradient(264.78deg, #041080 -2.85%, #0926C0 93.37%);
+}
+
+.work-card:nth-child(1) {
+  -webkit-clip-path: path("M20 0C8.95431 0 0 8.95429 0 20V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V177.073L438.319 139.323C439.858 137.03 439.858 133.312 438.319 131.018L413 93.2681V20C413 8.9543 404.046 0 393 0H20Z");
+          clip-path: path("M20 0C8.95431 0 0 8.95429 0 20V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V177.073L438.319 139.323C439.858 137.03 439.858 133.312 438.319 131.018L413 93.2681V20C413 8.9543 404.046 0 393 0H20Z");
+  width: calc(100% + 30px);
+}
+
+.work-card:nth-child(2) {
+  -webkit-clip-path: path("M20 0C8.9543 0 0 8.95429 0 20V86.5556L26.9424 130.805C28.3785 133.163 28.3785 136.987 26.9424 139.346L0 183.595V248.372C0 259.418 8.95432 268.372 20 268.372H394C405.046 268.372 414 259.418 414 248.372V20C414 8.9543 405.046 0 394 0H20Z M20 0C8.9543 0 0 8.95429 0 20V86.5556L26.9424 130.805C28.3785 133.163 28.3785 136.987 26.9424 139.346L0 183.595V248.372C0 259.418 8.95432 268.372 20 268.372H394C405.046 268.372 414 259.418 414 248.372V20C414 8.9543 405.046 0 394 0H20Z M391.349 66.1997C392.887 63.9064 395.381 63.9064 396.919 66.1997L440.393 131.018C441.931 133.312 441.931 137.03 440.393 139.323L396.919 204.142C395.381 206.435 392.887 206.435 391.349 204.142L347.874 139.323C346.336 137.03 346.336 133.312 347.874 131.018L391.349 66.1997Z");
+          clip-path: path("M20 0C8.9543 0 0 8.95429 0 20V86.5556L26.9424 130.805C28.3785 133.163 28.3785 136.987 26.9424 139.346L0 183.595V248.372C0 259.418 8.95432 268.372 20 268.372H394C405.046 268.372 414 259.418 414 248.372V20C414 8.9543 405.046 0 394 0H20Z M20 0C8.9543 0 0 8.95429 0 20V86.5556L26.9424 130.805C28.3785 133.163 28.3785 136.987 26.9424 139.346L0 183.595V248.372C0 259.418 8.95432 268.372 20 268.372H394C405.046 268.372 414 259.418 414 248.372V20C414 8.9543 405.046 0 394 0H20Z M391.349 66.1997C392.887 63.9064 395.381 63.9064 396.919 66.1997L440.393 131.018C441.931 133.312 441.931 137.03 440.393 139.323L396.919 204.142C395.381 206.435 392.887 206.435 391.349 204.142L347.874 139.323C346.336 137.03 346.336 133.312 347.874 131.018L391.349 66.1997Z");
+  width: calc(100% + 32px);
+}
+
+.work-card:nth-child(3) {
+  -webkit-clip-path: path("M20 0C8.95431 0 0 8.95429 0 20V84.9821L28.0166 130.995C29.4527 133.354 29.4527 137.178 28.0166 139.537L0 185.55V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V20C413 8.9543 404.046 0 393 0H20Z M20 0C8.95431 0 0 8.95429 0 20V84.9821L28.0166 130.995C29.4527 133.354 29.4527 137.178 28.0166 139.537L0 185.55V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V20C413 8.9543 404.046 0 393 0H20Z M150.208 244.803C148.217 242.891 148.26 239.835 150.304 237.979L205.538 187.839C207.583 185.982 210.855 186.029 212.846 187.941L266.927 239.883C268.918 241.796 268.875 244.851 266.831 246.707L211.597 296.848C209.552 298.704 206.28 298.658 204.288 296.745L150.208 244.803Z");
+          clip-path: path("M20 0C8.95431 0 0 8.95429 0 20V84.9821L28.0166 130.995C29.4527 133.354 29.4527 137.178 28.0166 139.537L0 185.55V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V20C413 8.9543 404.046 0 393 0H20Z M20 0C8.95431 0 0 8.95429 0 20V84.9821L28.0166 130.995C29.4527 133.354 29.4527 137.178 28.0166 139.537L0 185.55V248.372C0 259.418 8.95431 268.372 20 268.372H393C404.046 268.372 413 259.418 413 248.372V20C413 8.9543 404.046 0 393 0H20Z M150.208 244.803C148.217 242.891 148.26 239.835 150.304 237.979L205.538 187.839C207.583 185.982 210.855 186.029 212.846 187.941L266.927 239.883C268.918 241.796 268.875 244.851 266.831 246.707L211.597 296.848C209.552 298.704 206.28 298.658 204.288 296.745L150.208 244.803Z");
+  height: calc(100% + 30px);
+}
+
+.work-card:nth-child(4) {
+  -webkit-clip-path: path("M393 0.62793C404.046 0.62793 413 9.58222 413 20.6279V85.1841L385.013 131.203C383.578 133.562 383.578 137.388 385.013 139.747L413 185.766V249C413 260.046 404.046 269 393 269H20C8.95432 269 0 260.046 0 249V20.6279C0 9.58223 8.95432 0.62793 20 0.62793H393Z");
+          clip-path: path("M393 0.62793C404.046 0.62793 413 9.58222 413 20.6279V85.1841L385.013 131.203C383.578 133.562 383.578 137.388 385.013 139.747L413 185.766V249C413 260.046 404.046 269 393 269H20C8.95432 269 0 260.046 0 249V20.6279C0 9.58223 8.95432 0.62793 20 0.62793H393Z");
+}
+
+.work-card:nth-child(5) {
+  -webkit-clip-path: path("M421.822 0C432.867 0 441.822 8.95429 441.822 20V85.8705L414.634 130.575C413.199 132.934 413.199 136.76 414.634 139.119L441.822 183.823V248.372C441.822 259.418 432.867 268.372 421.822 268.372H47.8216C36.7759 268.372 27.8216 259.418 27.8216 248.372V20C27.8216 8.9543 36.7759 0 47.8216 0H421.822Z M421.822 0C432.867 0 441.822 8.95429 441.822 20V85.8705L414.634 130.575C413.199 132.934 413.199 136.76 414.634 139.119L441.822 183.823V248.372C441.822 259.418 432.867 268.372 421.822 268.372H47.8216C36.7759 268.372 27.8216 259.418 27.8216 248.372V20C27.8216 8.9543 36.7759 0 47.8216 0H421.822Z M50.1983 65.9281C48.6601 63.6347 46.1662 63.6347 44.628 65.9281L1.15363 130.747C-0.384545 133.04 -0.384543 136.758 1.15363 139.051L44.6281 203.87C46.1662 206.163 48.6601 206.163 50.1983 203.87L93.6727 139.051C95.2109 136.758 95.2109 133.04 93.6727 130.747L50.1983 65.9281Z");
+          clip-path: path("M421.822 0C432.867 0 441.822 8.95429 441.822 20V85.8705L414.634 130.575C413.199 132.934 413.199 136.76 414.634 139.119L441.822 183.823V248.372C441.822 259.418 432.867 268.372 421.822 268.372H47.8216C36.7759 268.372 27.8216 259.418 27.8216 248.372V20C27.8216 8.9543 36.7759 0 47.8216 0H421.822Z M421.822 0C432.867 0 441.822 8.95429 441.822 20V85.8705L414.634 130.575C413.199 132.934 413.199 136.76 414.634 139.119L441.822 183.823V248.372C441.822 259.418 432.867 268.372 421.822 268.372H47.8216C36.7759 268.372 27.8216 259.418 27.8216 248.372V20C27.8216 8.9543 36.7759 0 47.8216 0H421.822Z M50.1983 65.9281C48.6601 63.6347 46.1662 63.6347 44.628 65.9281L1.15363 130.747C-0.384545 133.04 -0.384543 136.758 1.15363 139.051L44.6281 203.87C46.1662 206.163 48.6601 206.163 50.1983 203.87L93.6727 139.051C95.2109 136.758 95.2109 133.04 93.6727 130.747L50.1983 65.9281Z");
+  width: calc(100% + 30px);
+  margin-left: -30px;
+}
+.work-card:nth-child(5) .card-content {
+  margin-left: 30px;
+}
+.work-card:nth-child(5) .card-title::before {
+  padding-left: 30px;
+}
+
+.work-card:nth-child(6) {
+  -webkit-clip-path: path("M209.334 0.62793H46.7454C35.6997 0.62793 26.7454 9.58222 26.7454 20.6279V249C26.7454 260.046 35.6997 269 46.7454 269H419.745C430.791 269 439.745 260.046 439.745 249V20.6279C439.745 9.58223 430.791 0.62793 419.745 0.62793H261.461L240.4 21.4088C238.435 23.3484 235.163 23.4388 233.094 21.6109L209.334 0.62793Z M209.334 0.62793H46.7454C35.6997 0.62793 26.7454 9.58222 26.7454 20.6279V249C26.7454 260.046 35.6997 269 46.7454 269H419.745C430.791 269 439.745 260.046 439.745 249V20.6279C439.745 9.58223 430.791 0.62793 419.745 0.62793H261.461L240.4 21.4088C238.435 23.3484 235.163 23.4388 233.094 21.6109L209.334 0.62793Z M44.6281 66.556C46.1662 64.2626 48.6601 64.2626 50.1983 66.556L93.6727 131.374C95.2109 133.668 95.2109 137.386 93.6727 139.679L50.1983 204.498C48.6601 206.791 46.1662 206.791 44.628 204.498L1.15363 139.679C-0.384545 137.386 -0.384543 133.668 1.15363 131.374L44.6281 66.556Z");
+          clip-path: path("M209.334 0.62793H46.7454C35.6997 0.62793 26.7454 9.58222 26.7454 20.6279V249C26.7454 260.046 35.6997 269 46.7454 269H419.745C430.791 269 439.745 260.046 439.745 249V20.6279C439.745 9.58223 430.791 0.62793 419.745 0.62793H261.461L240.4 21.4088C238.435 23.3484 235.163 23.4388 233.094 21.6109L209.334 0.62793Z M209.334 0.62793H46.7454C35.6997 0.62793 26.7454 9.58222 26.7454 20.6279V249C26.7454 260.046 35.6997 269 46.7454 269H419.745C430.791 269 439.745 260.046 439.745 249V20.6279C439.745 9.58223 430.791 0.62793 419.745 0.62793H261.461L240.4 21.4088C238.435 23.3484 235.163 23.4388 233.094 21.6109L209.334 0.62793Z M44.6281 66.556C46.1662 64.2626 48.6601 64.2626 50.1983 66.556L93.6727 131.374C95.2109 133.668 95.2109 137.386 93.6727 139.679L50.1983 204.498C48.6601 206.791 46.1662 206.791 44.628 204.498L1.15363 139.679C-0.384545 137.386 -0.384543 133.668 1.15363 131.374L44.6281 66.556Z");
+  width: calc(100% + 30px);
+  margin-left: -30px;
+}
+.work-card:nth-child(6) .card-content {
+  margin-left: 30px;
+}
+.work-card:nth-child(6) .card-title::before {
+  padding-left: 30px;
+}
+
+.card-title {
+  margin-bottom: 25px;
+}
+
+.work-card [class^=card-] {
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+
+.work-card .card-title::before {
+  counter-increment: cards;
+  content: "0" counter(cards);
+  position: absolute;
+  left: 38px;
+  top: 43px;
+  font-size: 2rem;
+  color: #969AF7;
+  font-family: "FuturaFuturisC", sans-serif;
+}
+
+.work-button {
+  margin: auto;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.faq-title {
+  margin-bottom: 53px;
+}
+
+.faq {
+  background: center 0/cover no-repeat url(../img/bg-lines3.png), center 0/cover no-repeat url(../img/bg-5.png);
+  padding-top: 131px;
+  padding-bottom: 95px;
+  margin-top: -60px;
+}
+
+.faq-wrap {
+  margin-top: 131px;
+  margin-bottom: 95px;
+}
+
+.article-title--white {
+  color: #fff;
+}
+
+.faq-questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 13px;
+}
+
+.faq-question {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.houdini-heading .houdini-toggle {
+  padding: 30px 53px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50.57%, #FFFFFF), to(#BDC0FF));
+  background: linear-gradient(180deg, #FFFFFF 50.57%, #BDC0FF 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+}
+
+.houdini-heading .houdini-toggle[aria-expanded=true] {
+  background: -webkit-gradient(linear, left top, left bottom, from(#969AF7), to(#686EEC));
+  background: linear-gradient(180deg, #969AF7 0%, #686EEC 100%);
+  color: #fff;
+}
+
+.answer {
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.houdini-toggle-icon {
+  background: #757AEF;
+  border-radius: 50%;
+  padding: 16.5px 13px;
+}
+
+[aria-expanded=true] .houdini-toggle-icon {
+  background: #fff;
+}
+
+.footer {
+  background: #333333;
+  color: #fff;
+  font-size: 1rem;
+  padding: 60px 0;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.footer-menu {
+  opacity: 1;
+}
+
+.footer-button {
+  background: #969AF7;
+  border: 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 1rem;
+  width: 261px;
+}
+
+.navigation--mobile {
+  display: none;
+}
+
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.burger::before {
+  top: 0;
+  -webkit-box-shadow: 0 11px 0 #fff;
+          box-shadow: 0 11px 0 #fff;
+  -webkit-transition: top 0.3s 0.15s, -webkit-box-shadow 0.3s 0.15s, -webkit-transform 0.3s;
+  transition: top 0.3s 0.15s, -webkit-box-shadow 0.3s 0.15s, -webkit-transform 0.3s;
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s, -webkit-box-shadow 0.3s 0.15s, -webkit-transform 0.3s;
+}
+
+.burger::after {
+  bottom: 0;
+  -webkit-transition: bottom 0.3s 0.15s, -webkit-transform 0.3s;
+  transition: bottom 0.3s 0.15s, -webkit-transform 0.3s;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
+  transition: bottom 0.3s 0.15s, transform 0.3s, -webkit-transform 0.3s;
+}
+
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+  -webkit-transition: top 0.3s, -webkit-box-shadow 0.15s, -webkit-transform 0.3s 0.15s;
+  transition: top 0.3s, -webkit-box-shadow 0.15s, -webkit-transform 0.3s 0.15s;
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s, -webkit-box-shadow 0.15s, -webkit-transform 0.3s 0.15s;
+}
+
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: bottom 0.3s, -webkit-transform 0.3s 0.15s;
+  transition: bottom 0.3s, -webkit-transform 0.3s 0.15s;
+  transition: bottom 0.3s, transform 0.3s 0.15s;
+  transition: bottom 0.3s, transform 0.3s 0.15s, -webkit-transform 0.3s 0.15s;
+}
+
+.menu--mobile {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 75px 20px;
+  background: #1C0A90;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.burger-checkbox:checked ~ .menu--mobile {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media (max-width: 1320px) {
+  .header, .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .banner {
+    padding-top: 280px;
+  }
+  .work-card:nth-child(n) {
+    -webkit-clip-path: none;
+            clip-path: none;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+  .work-card:nth-child(n) .card-content {
+    margin: 0;
+  }
+  .work-card:nth-child(n) .card-title::before {
+    padding: 0;
+  }
+}
+@media (max-width: 1294px) {
+  .banner-inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .banner-title {
+    text-align: center;
+  }
+}
+@media (max-width: 1024px) {
+  .work-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 840px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 20px;
+  }
+  .header-logo {
+    margin-left: 50px;
+  }
+  .footer-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-navigation.navigation--desctop {
+    display: none;
+  }
+  .navigation--mobile {
+    display: block;
+  }
+  .why-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .banner {
+    padding: 120px 0;
+  }
+  .why {
+    padding: 60px 0;
+  }
+  .brands {
+    padding: 120px 20px;
+  }
+  .work {
+    padding: 105px 0 115px;
+  }
+  .faq {
+    padding-top: 101px;
+    padding-bottom: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .banner-title {
+    font-size: 3.3333333333rem;
+  }
+  .cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    justify-items: center;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 16px;
+  }
+  .banner-title {
+    font-size: 2.7777777778rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .contact-number {
+    display: none;
+  }
+  .brands-slider {
+    padding: 0;
+  }
+  .swiper {
+    max-width: 260px;
+  }
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 14px;
+  }
+  .banner {
+    padding: 100px 0;
+  }
+  .banner-title {
+    font-size: 1.9444444444rem;
+  }
+  .header-logo {
+    margin: 0;
+  }
+  .banner-info {
+    margin-top: 27px;
+  }
+  .form-inner {
+    padding: 20px;
+  }
+  .button {
+    padding: 0.8333333333rem 2.2222222222rem;
+  }
+  .houdini-heading .houdini-toggle {
+    padding: 20px;
+  }
+  [class^=brands-button-] img {
+    width: 30px;
+  }
+  .brands-button-prev {
+    left: -20px;
+  }
+  .brands-button-next {
+    right: -20px;
+  }
+  .swiper {
+    max-width: 200px;
+  }
+  .brands-slide {
+    height: 144px;
+  }
+}/*# sourceMappingURL=style.css.map */
